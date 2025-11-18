@@ -67,7 +67,14 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/locations.geojson
-
+    - assets/1.pdf
+    - assets/2.pdf
+    - assets/3.pdf
+    - assets/4.pdf
+    - assets/5.pdf
+    - assets/6.pdf
+    - assets/7.pdf
+    - assets/8.pdf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

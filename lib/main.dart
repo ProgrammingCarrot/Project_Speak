@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'apptext.dart';
 import 'map.dart';
 import 'information.dart';
+import 'pdfread.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home': (context) => Home_Page(title: Text_List.appTitle),
         '/map': (context) => const Map_Page(),
-        '/information': (context) => const Information_Page()
+        '/information': (context) => const Information_Page(),
+        '/pdfread': (context) => const Pdfread_Page()
       },
       theme: ThemeData(
           // set prime app bar color
