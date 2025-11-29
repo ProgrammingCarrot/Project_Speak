@@ -5,6 +5,8 @@ class Text_List{
   static const String noPermission="請先開啟權限！";
   static const String deniedPermission="未取得定位權限！";
   static const String deniedPermissionForever="權限已被關閉，請手動開啟！";
+  static const String testButton="開始測驗";
+  static const String testPageTitle = "語音篩檢測驗";
 
   // for information page
   static const List<Map<String, String>> pdfFiles = [
@@ -16,5 +18,13 @@ class Text_List{
     {'title': '認識語言發展遲緩', 'path': 'assets/6.pdf'},
     {'title': '認識說話性語音障礙', 'path': 'assets/7.pdf'},
     {'title': '語言發展遲緩及音韻障礙與學障之關聯', 'path': 'assets/8.pdf'},
+  ];
+
+  // for test
+  static const List<Map<String,String>> vocabs = [
+    {'title':'積木', 'path':'assets/picture/block.png'},
+    {'title':'大哭', 'path':'assets/picture/cry.png'},
+    {'title':'布丁', 'path':'assets/picture/pudding.png'},
+    {'title':'打鼓', 'path':'assets/picture/drum.png'}
   ];
 }

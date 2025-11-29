@@ -3,6 +3,7 @@ import 'apptext.dart';
 import 'map.dart';
 import 'information.dart';
 import 'pdfread.dart';
+import 'test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,10 +21,10 @@ class MyApp extends StatelessWidget {
       // set all pages's routes
       initialRoute: '/home',
       routes: {
-        '/home': (context) => Home_Page(title: Text_List.appTitle),
         '/map': (context) => const Map_Page(),
         '/information': (context) => const Information_Page(),
-        '/pdfread': (context) => const Pdfread_Page()
+        '/pdfread': (context) => const Pdfread_Page(),
+        '/test': (context) => test_Page()
       },
       theme: ThemeData(
           // set prime app bar color
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
           elevatedButtonTheme: ElevatedButtonThemeData(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.grey,
+                fixedSize: const Size(160, 40),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
@@ -95,6 +97,14 @@ class _MyHomePageState extends State<Home_Page> {
                   Navigator.pushNamed(context, '/map');
                 },
                 child: Text(Text_List.jumpToMap,
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: Colors.brown),
+                )
+            ),
+            ElevatedButton(
+                onPressed: (){
+                  Navigator.pushNamed(context, '/test');
+                },
+                child: Text(Text_List.testButton,
                   style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: Colors.brown),
                 )
             )
